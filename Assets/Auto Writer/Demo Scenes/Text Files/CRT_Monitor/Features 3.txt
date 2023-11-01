@@ -1,0 +1,12 @@
+- Assignable sounds
+
+- Per letter or per word typing
+
+- Speed and timing options
+
+- Can be activated via 
+  Unity's animation tools
+  
+- Easy integration into any project
+  
+  

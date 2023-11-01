@@ -1,0 +1,108 @@
+AUTO WRITER v01
+
+---------------------------------------------------------
+---------------------------------------------------------
+GETTING STARTED
+
+1) Add Auto Writer script to any game object.
+
+2) Create and import a text file containing the text to be written.
+
+3) Drop text file into the 'Text file' field in the Auto Writer script. 
+
+4) Create a text mesh game object and load any desired font.
+
+5) Drop text mesh game object into the 'Text Mesh' field in the Auto Writer script. 
+
+(Adding the Auto Writer script to the text mesh game object it is referencing will keep things tidy)
+
+
+6) Press play and the text should start writing.
+
+
+---------------------------------------------------------
+---------------------------------------------------------
+
+OPTIONS
+
+Text Active - Auto Writer can be activated and deactivated by using 'Text Active'. Call via code or an animation. 
+Turns on/off the mesh renderer of the text mesh object.
+
+---------------------------------------------------------
+
+STARTUP
+
+Clear Text on start - This will clear any text in the text meshes' 'text' field upon activing the script.
+
+Start Delay - Number of seconds to delay the writing after activation.
+
+Delay in real time - If ticked Auto Writer will ignore game time and work in real world time.
+
+---------------------------------------------------------
+
+SOUND
+
+Sound Effects - Turns on sound options
+
+Mute Characters - Any characters defined in this field will not play sounds (defaults are 'space' and 'enter')
+
+Type Sound
+	
+Size - Number of sounds to use. Auto Writer will randomly play sounds from the list.
+	
+Element - Load sound(s) here.
+
+
+
+Special Sound Effects - Turns on sound options for special sounds.
+
+Special characters - Specify selected characters to play alternate sounds.
+
+Special Sounds - Any characters defined here will only play sounds from the 'Special Sounds" list.
+	
+Size - Number of sounds to use. Auto Writer will randomly play sounds from the list.
+	
+Element - Load special sound(s) here
+
+---------------------------------------------------------
+
+DISPLAY
+
+Repeat - If ticked writing will repeat itself.
+
+Loop - If ticked the text will clear itself when finished and start again exactly as before. If unticked the text will repeat but continue on from where it finished.
+
+Write Whole Words - If ticked will write per-word instead of per-letter.
+
+Non-words - Define characters that are not classed as words
+
+---------------------------------------------------------
+
+LETTER/WORD DELAY
+
+Real world time - Whether to use game time or real world time.
+
+Interval - The time between writing each character or word.
+
+Varient - Random variation of time between each character or word.
+
+
+---------------------------------------------------------
+
+CHAIN
+
+Trigger When Done - Turn on 'Chain Mode'. Activates a new writer object upon it's completion.
+
+Trigger Object - Next Auto Writer game object to activate.
+
+Reset Trigger Object - Resets the new writer object upon activation (deletes any text it may have been writing).
+
+Deactivate Self - Deactivates itself upon activating the next object.
+
+
+---------------------------------------------------------
+
+ADDITIONAL NOTES
+
+CompletePrintout()  - You can call this function from code or the animation window.
+					  It will finish writing text from the text file instantly. Useful for fast forwarding through text.

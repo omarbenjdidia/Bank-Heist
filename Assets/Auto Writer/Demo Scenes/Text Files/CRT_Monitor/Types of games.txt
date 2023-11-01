@@ -1,0 +1,2 @@
+TEXTOR is an automated text
+typing plugin for Unity.

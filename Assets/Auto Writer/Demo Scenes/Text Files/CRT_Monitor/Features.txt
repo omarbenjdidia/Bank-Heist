@@ -1,0 +1,3 @@
+Load text from text files 
+  for easy formatting
+  
